@@ -1,0 +1,9 @@
+#!/bin/sh
+
+# see if we are local or remote window
+if [[  "$DISPLAY" =~ .*xquartz.* ]] ; then
+    /Local\ OS\ X\ Software/Emacs.app/Contents/MacOS/Emacs $*
+else
+    emacs $*
+fi
+
