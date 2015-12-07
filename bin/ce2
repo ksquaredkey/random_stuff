@@ -2,8 +2,8 @@
 
 # see if we are local or remote window
 if [[  "$DISPLAY" =~ .*xquartz.* ]] ; then
-    /Local\ OS\ X\ Software/Emacs.app/Contents/MacOS/Emacs $*
+    /Local\ OS\ X\ Software/Emacs.app/Contents/MacOS/Emacs "$@"
 else
-    emacs $*
+    emacs "$@"
 fi
 
